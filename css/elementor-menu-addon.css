@@ -1,0 +1,218 @@
+ /* LOKI HEADER */
+
+ .loki-header {
+   position: relative;
+   -webkit-text-size-adjust: 100%;
+   text-size-adjust: 100%;
+   box-sizing: border-box;
+ }
+
+ .loki-header *,
+ .loki-header *:before,
+ .loki-header *:after {
+   box-sizing: border-box;
+ }
+
+ /* LOKI CONTAINER */
+
+ .loki-container {
+   position: relative;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 1280px;
+ }
+
+ /* LOKI MENU */
+
+
+ .loki-menu {
+   line-height: 1.5;
+ }
+
+ .loki-menu ul {
+   margin: 0;
+   padding: 0;
+   display: none;
+   list-style: none;
+ }
+
+ .loki-menu li {
+   position: relative;
+   list-style: none;
+ }
+
+ .loki-menu li>a {
+   display: block;
+   color: #56585A;
+   padding: 15px 30px;
+   -webkit-text-decoration: none;
+   text-decoration: none;
+   position: relative;
+   -webkit-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+ }
+
+ .loki-menu input[type=checkbox] {
+   position: absolute;
+   width: 0;
+   height: 0;
+   margin: 0;
+   opacity: 0;
+   pointer-events: none;
+   visibility: hidden;
+ }
+
+ .loki-menu input[type=checkbox]:checked~a>label {
+   -webkit-transform: rotate(-90deg);
+   -ms-transform: rotate(-90deg);
+   transform: rotate(-90deg);
+ }
+
+ .loki-menu input[type=checkbox]:checked~a>label:before {
+   opacity: 0;
+ }
+
+ .loki-menu label {
+   display: block;
+   position: absolute;
+   cursor: pointer;
+   right: 25px;
+   top: 0;
+   bottom: 0;
+   margin: auto;
+   height: 32px;
+   width: 32px;
+   line-height: 1.5;
+   text-align: center;
+   z-index: 1;
+   -webkit-transition: -webkit-transform .4s;
+   -webkit-transition: transform .4s;
+   transition: transform .4s;
+ }
+
+ .loki-menu label:before,
+ .loki-menu label:after {
+   position: absolute;
+   content: "";
+   width: 60%;
+   height: 1.5px;
+   background-color: #000;
+   display: block;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin: auto;
+   -webkit-transition: -webkit-transform .4s, opacity .4s;
+   -webkit-transition: transform .4s, opacity .4s;
+   transition: transform .4s, opacity .4s;
+   opacity: 1;
+ }
+
+ .loki-menu label:after {
+   -webkit-transform: rotate(90deg);
+   -ms-transform: rotate(90deg);
+   transform: rotate(90deg);
+ }
+
+ .loki-menu>ul>li>a {
+   font-size: 15px;
+   font-style: normal;
+   font-weight: normal;
+   text-transform: uppercase;
+ }
+
+ .loki-menu ul ul li>a {
+   font-size: 14px;
+   font-style: normal;
+   font-weight: normal;
+   text-transform: none;
+   padding: 12px 30px;
+ }
+
+ /* LOKI TOGGLE */
+
+ .loki-toggle {
+   position: absolute;
+   width: 0;
+   height: 0;
+   margin: 0;
+   opacity: 0;
+   pointer-events: none;
+   visibility: hidden;
+ }
+
+ .loki-toggle+label {
+   position: absolute;
+   top: 26.25px;
+   right: 30px;
+   width: 20px;
+   height: 16px;
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-flex-direction: column;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   -webkit-box-pack: justify;
+   -webkit-justify-content: space-between;
+   -ms-flex-pack: justify;
+   justify-content: space-between;
+   cursor: pointer;
+   -webkit-transition: -webkit-transform 200ms ease-out;
+   -webkit-transition: transform 200ms ease-out;
+   transition: transform 200ms ease-out;
+ }
+
+ .loki-toggle+label>span {
+   display: block;
+   background-color: #000;
+   border-radius: 2px;
+   width: 100%;
+   height: 2px;
+   -webkit-transition: all 200ms;
+   transition: all 200ms;
+ }
+
+ .loki-toggle+label>span:last-child {
+   -webkit-transform-origin: left;
+   -ms-transform-origin: left;
+   transform-origin: left;
+ }
+
+ .loki-toggle:checked+label {
+   -webkit-transform: rotate(-45deg);
+   -ms-transform: rotate(-45deg);
+   transform: rotate(-45deg);
+ }
+
+ .loki-toggle:checked+label>span:first-child {
+   width: 50%;
+   -webkit-transform: rotate(-90deg) translateX(3px);
+   -ms-transform: rotate(-90deg) translateX(3px);
+   transform: rotate(-90deg) translateX(3px);
+   -webkit-transform-origin: right;
+   -ms-transform-origin: right;
+   transform-origin: right;
+ }
+
+ .loki-toggle:checked+label>span:last-child {
+   width: 50%;
+   -webkit-transform: rotate(-90deg) translateX(-3px) translateY(10px);
+   -ms-transform: rotate(-90deg) translateX(-3px) translateY(10px);
+   transform: rotate(-90deg) translateX(-3px) translateY(10px);
+ }
+
+ .loki-menu {
+   padding-bottom: 20px;
+ }
+
+ .loki-menu>ul {
+   display: block;
+ }
+
+ .loki-menu input:checked~ul {
+   display: block;
+ }
