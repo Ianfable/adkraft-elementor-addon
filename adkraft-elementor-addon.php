@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: AdKraft Elementor Addon
- * Description: Elementor Addon.
+ * Description: Elementor Dropdown Menu Addon.
  * Author: Marko Jankovic
  * Version: 1.0.0
  */
